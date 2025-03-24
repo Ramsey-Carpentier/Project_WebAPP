@@ -24,30 +24,33 @@
     <div class="header">
         <img src="images/logo2.png" style="height: 135px;"></img>
         <h1>Tafel 14</h1>
-        <img src="images/winkelkar.jpg" style="height: 100px;  cursor: pointer;"></img>
+        <div id="winkelkar-container">
+            <img src="images/winkelkar.jpg" id="winkelkar" style="height: 100px;">
+            <div id="itemCount" style="display: none;">0</div>
+        </div>
 
     </div>
 
     <div class="scroller">
-        <button class="button">Soft drinks <img src="images/Soft drinks.png"></button>
-        <button class="button">Hot drinks <img src="images/Hot drins.png"></button>
-        <button class="button">Beer <img src="images/beer.png"></button>
-        <button class="button">Wine <img src="images/Wine.png"></button>
-        <button class="button">Apperetieven <img src="images/apperetieven.png"></button>
-        <button class="button">Cocktails <img src="images/cocktails.png"></button>
-        <button class="button">NA Drinks <img src="images/NAcocktails.png"></button>
-        <button class="button">Tapa's <img src="images/Tapas.png"></button>
-        <button class="button">Menu <img src="images/lunch.png"></button>
-        <button class="button">Kids <img src="images/kids.png"></button>
-        <button class="button">Pasta <img src="images/Pasta.png"></button>
-        <button class="button">Burgers <img src="images/burger.png"></button>
-        <button class="button">Salads <img src="images/Salades.png"></button>
-        <button class="button">Desserts <img src="images/desserts.png"></button>
+        <button class="button" id="SoftDrinks">Soft drinks <img src="images/fotos_slider/Soft drinks.png"></button>
+        <button class="button">Hot drinks <img src="images/fotos_slider/Hot drins.png"></button>
+        <button class="button">Beer <img src="images/fotos_slider/beer.png"></button>
+        <button class="button">Wine <img src="images/fotos_slider/Wine.png"></button>
+        <button class="button">Apperetieven <img src="images/fotos_slider/apperetieven.png"></button>
+        <button class="button">Cocktails <img src="images/fotos_slider/cocktails.png"></button>
+        <button class="button">NA Drinks <img src="images/fotos_slider/NAcocktails.png"></button>
+        <button class="button">Snacks <img src="images/fotos_slider/Tapas.png"></button>
+        <button class="button">Menu <img src="images/fotos_slider/lunch.png"></button>
+        <button class="button">Kids <img src="images/fotos_slider/kids.png"></button>
+        <button class="button">Pasta <img src="images/fotos_slider/Pasta.png"></button>
+        <button class="button">Burgers <img src="images/fotos_slider/burger.png"></button>
+        <button class="button">Salads <img src="images/fotos_slider/Salades.png"></button>
+        <button class="button">Desserts <img src="images/fotos_slider/desserts.png"></button>
       </div>
 
-    <div class="inhoud">
+      <div id="drinkContainer" class="drink-container"></div>
 
-    </div>
+
     <div class="footer">
         <div class="footer-container">
             <!-- Contactgegevens -->
