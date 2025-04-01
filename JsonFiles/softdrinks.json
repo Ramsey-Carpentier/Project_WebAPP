@@ -2,32 +2,32 @@
     "softdrinks": [
       {
         "name": "Plat water",
-        "image": "./images/fotos_drinks/plat.png",
+        "image": "../images/fotos_drinks/plat.png",
         "price": 2.5
       },
       {
         "name": "Bruis water",
-        "image": "./images/fotos_drinks/bruisend.png",
+        "image": "../images/fotos_drinks/bruisend.png",
         "price": 2.5
       },
       {
         "name": "Coca-Cola",
-        "image": "./images/fotos_drinks/cola.png",
+        "image": "../images/fotos_drinks/cola.png",
         "price": 2.50
       },
       {
         "name": "Coca-Cola zero",
-        "image": "./images/fotos_drinks/colazero.png",
+        "image": "../images/fotos_drinks/colazero.png",
         "price": 2.5
       },
       {
         "name": "Fanta",
-        "image": "./images/fotos_drinks/fanta.png",
+        "image": "../images/fotos_drinks/fanta.png",
         "price": 2.5
       },
       {
         "name": "Ice tea",
-        "image": "./images/fotos_drinks/icetea.png",
+        "image": "../images/fotos_drinks/icetea.png",
         "price": 2.5
       }
       
