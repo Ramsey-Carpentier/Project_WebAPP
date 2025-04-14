@@ -1,0 +1,40 @@
+{
+    "hotdrinks": [
+      {
+        "name": "Coffee",
+        "image": "../images/fotos_drinks/coffee.png",
+        "price": 3
+          },
+      {
+        "name": "Cappuccino",
+        "image": "../images/fotos_drinks/cappuccino.png",
+        "price": 3.5
+      },
+      {
+        "name": "Latte Macchiato",
+        "image": "../images/fotos_drinks/latte_macchiato.png",
+        "price": 3.5
+      },
+      {
+        "name": "Chocolademelk",
+        "image": "../images/fotos_drinks/warme_chocolademelk.png",
+        "price": 3
+      },
+      {
+        "name": "Verse Muntthee",
+        "image": "../images/fotos_drinks/verse_muntthee.png",
+        "price": 4
+      },
+      {
+        "name": "Irish Coffee",
+        "image": "../images/fotos_drinks/irish_coffee.png",
+        "price": 7
+      },
+      {
+        "name": "Italian Coffee",
+        "image": "../images/fotos_drinks/italian_coffee.png",
+        "price": 7
+      }
+    ]
+  }
+  

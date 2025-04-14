@@ -171,3 +171,73 @@ body{
     font-weight: bold;
     color: #ffd500;
 }
+
+.drink-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+.enlarge {
+    transform: scale(1.2);
+}
+
+.snack-item {
+    background: transparent;
+    border: 2px solid #ffd500;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 213, 0, 0.5);
+    height: 500px;
+    cursor: pointer;
+}
+.snack-item img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.snack-item h3 {
+    margin: 5px 0;
+    font-size: 35px;
+    color: #ffd500;
+}
+.snack-item p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffd500;
+}
+
+.snack-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hotdrink-item {
+    background: transparent;
+    border: 2px solid #ffd500;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 213, 0, 0.5);
+    height: 500px;
+    cursor: pointer;
+}
+.hotdrink-item img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.hotdrink-item h3 {
+    margin: 5px 0;
+    font-size: 35px;
+    color: #ffd500;
+}
+.hotdrink-item p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffd500;
+}
+
+.hotdrink-image {
+    transition: transform 0.3s ease-in-out;
+}

@@ -21,11 +21,28 @@
     <script src="../scripts/orderscript.js"></script>
 </head>
 <body>
-    <img src="../images/pijltje.jpg" id="keerdekewere"></img>
-    <h1>Je Bestelling</h1>
-    <div id="orderContainer">
-        <ul id="drinkList"></ul>
-        <button id="confirmOrder" class="btn yellow darken-2">Bevestig Bestelling</button>
-    </div>
+    <body>
+        <img src="../images/pijltje.jpg" id="keerdekewere" alt="Terugknop">
+        
+        <h1>Je Bestelling</h1>
+        
+        <h2 id="tafelNummerDisplay"></h2>
+        
+        <div id="orderContainer">
+            <table id="drinkTable" class="striped highlight centered">
+                <thead>
+                    <tr>
+                        <th>Naam</th>
+                        <th>Aantal</th>
+                        <th>Prijs/stuk</th>
+                        <th>Subtotaal</th>
+                    </tr>
+                </thead>
+            </table>
+            
+            
+            <h3 id="totalPrice">Totale prijs: €0.00</h3>
+            <button id="confirmOrder" class="btn yellow darken-2">Bevestig Bestelling</button>
+        </div>
 </body>
 </html>

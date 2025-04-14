@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    let tafelnummer;
     function onScanSuccess(decodedText, decodedResult) {
         document.getElementById("qr-result").innerText = "Is uw Tafelnummer:  " + decodedText + "?";
+        tafelnummer = decodedText;
         document.getElementById("confirm-btn").disabled = false;
     }
 
@@ -19,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     );
 
     document.getElementById("confirm-btn").addEventListener("click", function() {
-        window.location.href = "../pages/start.html";
+        window.location.href = `/Project_WebAPP/pages/start.html?tafelnummer=${encodeURIComponent(tafelnummer)}`;
     });
 
 });

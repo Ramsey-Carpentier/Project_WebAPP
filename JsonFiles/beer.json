@@ -1,0 +1,45 @@
+{
+    "beers": [
+      {
+        "name": "Jupiler",
+        "image": "../images/fotos_drinks/jupiler.png",
+        "price": 2.5
+      },
+      {
+        "name": "Stella Artois",
+        "image": "../images/fotos_drinks/stella.png",
+        "price": 2.5
+      },
+      {
+        "name": "St. Bernardus Tripel",
+        "image": "../images/fotos_drinks/sint_bernardus_triple.png",
+        "price": 5
+      },
+      {
+        "name": "St. Bernardus Prior",
+        "image": "../images/fotos_drinks/sint_bernardus_prior.png",
+        "price": 5
+      },
+      {
+        "name": "Duvel",
+        "image": "../images/fotos_drinks/duvel.png",
+        "price": 4.5
+      },
+      {
+        "name": "Omer",
+        "image": "../images/fotos_drinks/omer.png",
+        "price": 4.5
+      },
+      {
+        "name": "Kasteelbier Rouge",
+        "image": "../images/fotos_drinks/rouge.png",
+        "price": 4
+      },
+      {
+        "name": "Brugse Sportzot",
+        "image": "../images/fotos_drinks/spportzot.png",
+        "price": 3.5
+      }
+    ]
+  }
+  

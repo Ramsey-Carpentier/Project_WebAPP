@@ -1,0 +1,46 @@
+{
+    "wines": [
+    {
+        "name": "Glas Witte Wijn",
+        "image": "../images/fotos_drinks/glas_wit.png",
+        "price": 4.5
+    },
+    {
+        "name": "Glas Rode Wijn",
+        "image": "../images/fotos_drinks/glas_rood.png",
+        "price": 4.5
+    },
+    {
+        "name": "Glas Rosé Wijn",
+        "image": "../images/fotos_drinks/glas_rose.png",
+        "price": 4.5
+    },
+    {
+        "name": "Glas Cava",
+        "image": "../images/fotos_drinks/glas_cava.png",
+        "price": 5
+    },
+    {
+        "name": "Fles Witte Wijn",
+        "image": "../images/fotos_drinks/fles_wit.png",
+        "price": 26.0
+    },
+    {
+        "name": "Fles Rode Wijn",
+        "image": "../images/fotos_drinks/fles_rood.png",
+        "price": 26.0
+    },
+    {
+        "name": "Fles Rosé Wijn",
+        "image": "../images/fotos_drinks/fles_rose.png",
+        "price": 26.0
+    },
+    {
+        "name": "Fles Cava",
+        "image": "../images/fotos_drinks/fles_cava.png",
+        "price": 30.0
+    }
+    ]
+
+}
+  

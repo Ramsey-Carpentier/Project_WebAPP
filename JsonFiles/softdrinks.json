@@ -13,12 +13,12 @@
       {
         "name": "Coca-Cola",
         "image": "../images/fotos_drinks/cola.png",
-        "price": 2.50
+        "price": 2.5
       },
       {
         "name": "Coca-Cola zero",
         "image": "../images/fotos_drinks/colazero.png",
-        "price": 2.5
+        "price": 2.6
       },
       {
         "name": "Fanta",
@@ -28,7 +28,17 @@
       {
         "name": "Ice tea",
         "image": "../images/fotos_drinks/icetea.png",
-        "price": 2.5
+        "price": 2.8
+      },
+      {
+        "name": "Fristi",
+        "image": "../images/fotos_drinks/fristi.png",
+        "price": 2.3
+      },
+      {
+        "name": "Cecemel",
+        "image": "../images/fotos_drinks/cecemel.png",
+        "price": 2.3
       }
       
     ]

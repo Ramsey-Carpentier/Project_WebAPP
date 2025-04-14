@@ -1,5 +1,6 @@
 :root {
     --background: #3e3d3f;
+    --highlight: #ffd500;
 }
 
 body {
@@ -9,15 +10,19 @@ body {
     text-align: center;
 }
 
-h1 {
-    color: #ffd500;
-    font-size: 36px;
-    margin-bottom: 20px;
+h1, h2, h3 {
+    color: var(--highlight);
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-decoration: underline;
 }
 
 #orderContainer {
     background: transparent;
-    border: 5px solid #ffd500;
+    border: 5px solid var(--highlight);
     padding: 20px;
     display: inline-block;
     border-radius: 8px;
@@ -36,10 +41,10 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #ffd500;
+    color: var(--highlight);
     font-size: 18px;
     padding: 10px 15px;
-    width: 300px;
+    width: 350px;
 }
 
 .btn-container {
@@ -50,9 +55,19 @@ h1 {
 button {
     background: none;
     border: none;
-    color: #ffd500;
+    color: var(--highlight);
     font-size: 20px;
     cursor: pointer;
+}
+
+.drink-price {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#totalPrice {
+    font-size: 20px;
+    margin: 15px 0;
 }
 
 img {
@@ -63,3 +78,32 @@ img {
     left: 50px;
     cursor: pointer;
 }
+
+th{
+    color: #ffd500;
+}
+
+button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#drinkTable tr td {
+    padding: 10px;
+}
+
+#drinkTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#drinkTable tr {
+    background: transparent;
+    color: #ffd500;
+}
+
+#drinkTable tr:last-child {
+    border-bottom: none;
+}
+

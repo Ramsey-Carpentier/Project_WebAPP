@@ -1,0 +1,49 @@
+{
+    "snacks": [
+        {
+            "name": "Bitterballen (12 st.)",
+            "image": "../images/fotos_snacks/bitterballen.jpg",
+            "price": 25
+        },
+        {
+            "name": "calamares (6 st.)",
+            "image": "../images/fotos_snacks/calamares.jpg",
+            "price": 12
+        },
+        {
+            "name": "Portie friet",
+            "image": "../images/fotos_snacks/friet.jpg",
+            "price": 3.5
+        },
+        {
+            "name": "tortilla chips",
+            "image": "../images/fotos_snacks/tarti.jpg",
+            "price": 6.5
+        },
+        {
+            "name": "Lookbrood",
+            "image": "../images/fotos_snacks/lookbrood.jpg",
+            "price": 5.0
+        },
+        {
+            "name": "camembert",
+            "image": "../images/fotos_snacks/camebert.jpg",
+            "price": 3.0
+        },
+        {
+            "name": "speklapje",
+            "image": "../images/fotos_snacks/spek.jpg",
+            "price": 4.0
+        },
+        {
+            "name": "partysnacks (24 st.)",
+            "image": "../images/fotos_snacks/snaks.jpg",
+            "price": 4.5
+        },
+        {
+            "name": "Witte pens",
+            "image": "../images/fotos_snacks/witte pens.jpg",
+            "price": 4.5
+        }
+    ]
+}
