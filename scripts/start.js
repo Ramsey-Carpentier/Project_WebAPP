@@ -8,13 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search);
     let tafelNummer = urlParams.get("tafelnummer");
 
-    if (tafelNummer) {
+    if (tafelNummer && tafelNummer !== "undefined") {
+
         sessionStorage.setItem("tafelnummer", tafelNummer);
     } else {
         tafelNummer = sessionStorage.getItem("tafelnummer");
     }
 
-    if (tafelNummer) {
+    if (tafelNummer && tafelNummer !== "undefined") {
+
         const tafelElement = document.getElementById("tafelnummer");
         if (tafelElement) {
             tafelElement.innerText = "Tafelnummer: " + tafelNummer;
@@ -55,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // ⬇️ Klikhandlers (steeds met saveSelections())
 
     document.getElementById("SoftDrinks").addEventListener("click", function () {
         fetch("../JsonFiles/softdrinks.json")

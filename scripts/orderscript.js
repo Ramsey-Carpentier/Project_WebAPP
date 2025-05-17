@@ -12,11 +12,19 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     let combinedDrinks = [];
+    const drinkCategories = {};
 
     categories.forEach(category => {
         const items = JSON.parse(sessionStorage.getItem(category) || "[]");
-        combinedDrinks = combinedDrinks.concat(items);
+        items.forEach(item => {
+            combinedDrinks.push(item);
+            const match = item.match(/(.+?) \(/);
+            if (match) {
+                drinkCategories[match[1].trim()] = category;
+            }
+        });
     });
+
 
     // Voeg tafelnummer vooraan toe als die bestaat
     if (tafelNummer) {
@@ -71,14 +79,16 @@ document.addEventListener("DOMContentLoaded", function () {
             const countCell = document.createElement("td");
             const minusBtn = document.createElement("button");
             minusBtn.textContent = "-";
-            minusBtn.style.border = "3px solid #ffd500";
+            minusBtn.style.border = "2px solid #ffd500";
             minusBtn.style.borderRadius = "5px";
             minusBtn.style.color = "#ffd500";
+            minusBtn.style.marginRight = "5px";
             const plusBtn = document.createElement("button");
             plusBtn.textContent = "+";
-            plusBtn.style.border = "3px solid #ffd500";
+            plusBtn.style.border = "2px solid #ffd500";
             plusBtn.style.borderRadius = "5px";
             plusBtn.style.color = "#ffd500";
+            plusBtn.style.marginLeft = "5px";
             const countSpan = document.createElement("span");
             countSpan.textContent = count;
 
@@ -153,30 +163,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Functie om de sessionStorage bij te werken
     function updateSessionStorage() {
-        const updatedDrinks = [];
-        
-        // Voeg de drankjes toe in de juiste volgorde
-        for (const [drink, count] of Object.entries(drinkCounts)) {
-            for (let i = 0; i < count; i++) {
-                updatedDrinks.push(`${drink} (€${drinkPrices[drink].toFixed(2)})`);
-            }
+    // Reset de arrays per categorie
+    const updatedByCategory = {
+        selectedDrinks: [],
+        selectedSnacks: [],
+        selectedBeers: [],
+        selectedhotdrinks: [],
+        selectedWines: []
+    };
+
+    for (const [drink, count] of Object.entries(drinkCounts)) {
+        const category = drinkCategories[drink] || "selectedDrinks"; // fallback
+        for (let i = 0; i < count; i++) {
+            updatedByCategory[category].push(`${drink} (€${drinkPrices[drink].toFixed(2)})`);
         }
-
-        // Herbouw de combinedDrinks array en sla die op in sessionStorage
-        const tafelNummer = sessionStorage.getItem("tafelnummer") || null;
-        let combinedDrinks = [];
-
-        if (tafelNummer) {
-            combinedDrinks.push(tafelNummer);
-        }
-
-        combinedDrinks = combinedDrinks.concat(updatedDrinks);
-
-        // Sla de bijgewerkte drankjes op in sessionStorage
-        categories.forEach(category => {
-            sessionStorage.setItem(category, JSON.stringify(updatedDrinks));
-        });
     }
+
+    // Opslaan per originele categorie
+    for (const category of categories) {
+        sessionStorage.setItem(category, JSON.stringify(updatedByCategory[category]));
+    }
+}
+
 
     updateTable();
 

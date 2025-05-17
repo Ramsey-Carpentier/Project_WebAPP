@@ -70,21 +70,32 @@ button {
     margin: 15px 0;
 }
 
-img {
-    width: 150px;
+img#keerdekewere {
+    width: 60px;
     height: auto;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 20px;
+    left: 20px;
     cursor: pointer;
+    border: 2px solid #ffd500;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    padding: 5px;
 }
+
+img#keerdekewere:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+
 
 th{
     color: #ffd500;
 }
 
 button {
-    margin: 0 5px;
+    margin: 5px 5px;
     padding: 5px 10px;
     cursor: pointer;
 }
@@ -96,7 +107,9 @@ button {
 #drinkTable {
     width: 100%;
     border-collapse: collapse;
+    min-height: 200px;
 }
+
 
 #drinkTable tr {
     background: transparent;
@@ -107,3 +120,10 @@ button {
     border-bottom: none;
 }
 
+
+
+@media (max-width: 450px) {
+    h1 {
+      font-size: 40px;
+    }
+  }

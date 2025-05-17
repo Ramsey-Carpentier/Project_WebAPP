@@ -1,0 +1,26 @@
+{
+  "name": "Bareto",
+  "short_name": "Bareto",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#3e3d3f",
+  "theme_color": "#ffd500",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "images/favicon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo1.png",
+      "sizes": "496x496",
+      "type": "image/png"
+    }
+  ]
+}

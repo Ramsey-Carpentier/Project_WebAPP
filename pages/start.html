@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, User-scale=1, maximum-scale=1">
     <title>Bareto Home page</title>
 
     <!-- Google Icon Font toevoegen. -->
@@ -19,10 +19,11 @@
 
     <!-- Link naar onze eigen JavaScript. -->
     <script src="../scripts/start.js"></script>
+        <link rel="manifest" href="../manifest.json">
 </head>
 <body >
     <div class="header">
-        <img src="../images/logo2.png" style="height: 135px;"></img>
+        <img src="../images/logo2.png" id="logo" style="height: 135px;"></img>
         <h1 id="tafelnummer">...</h1>
         <div id="winkelkar-container">
             <img src="../images/winkelkar.jpg" id="winkelkar" style="height: 100px;">

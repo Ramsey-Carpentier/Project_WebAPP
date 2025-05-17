@@ -39,3 +39,9 @@ body {
     font-size: 100px;
     color: green;
 }
+
+@media (max-width: 450px) {
+    .success-message p {
+      font-size: 40px;
+    }
+  }

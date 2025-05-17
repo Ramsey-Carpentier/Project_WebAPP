@@ -241,3 +241,73 @@ body{
 .hotdrink-image {
     transition: transform 0.3s ease-in-out;
 }
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    #winkelkar-container {
+        margin-top: 10px;
+    }
+
+    .scroller {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin: 0 20px;
+        padding: 10px 0;
+    }
+
+    .button {
+        width: 250px;
+        font-size: 22px;
+        height: 50px;
+    }
+
+    .drink-container {
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+
+    .footer {
+        font-size: 18px;
+    }
+
+    .footer-section h3 {
+        font-size: 24px;
+    }
+
+    .footer-section p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button {
+        width: 200px;
+        font-size: 18px;
+        height: 45px;
+    }
+
+    .drink-item, .snack-item, .hotdrink-item {
+        height: auto;
+    }
+
+    .drink-item img,
+    .snack-item img,
+    .hotdrink-item img {
+        height: auto;
+        width: 100%;
+        max-width: 250px;
+    }
+}
